@@ -1,0 +1,8 @@
+flask
+groq
+mammoth
+pymupdf
+pytesseract
+pdf2image
+pillow
+gunicorn
