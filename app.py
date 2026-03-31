@@ -9,7 +9,7 @@ from routes.payment import payment_bp
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://postgres:24#November#2004@localhost:5432/evantra_db"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL", "postgresql+psycopg2://postgres:24#November#2004@localhost:5432/evantra_db")
 app.config["JWT_SECRET_KEY"] = "evantra-super-secret-key-2024-production-ready"
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = False
 app.config["JWT_SECRET_KEY"] = "evantra-super-secret-key-2024-production-ready"
